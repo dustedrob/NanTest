@@ -86,7 +86,7 @@ public class DeviceListActivity extends AppCompatActivity {
 
 
 
-                    Snackbar.make(view, "Wi-Fi Aware not available", Snackbar.LENGTH_LONG)
+                    Snackbar.make(view, "Wi-Fi Aware available", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                     requestPermissions();
 
@@ -94,7 +94,8 @@ public class DeviceListActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Log.e(TAG, "onClick: wifi aware not available");
+                    Snackbar.make(view, "Wi-Fi Aware NOT available", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
                 }
             }
         });
@@ -144,7 +145,7 @@ public class DeviceListActivity extends AppCompatActivity {
 
             if (wifiAwareManager.isAvailable())
             {
-                Toast.makeText(this,"WIFI AWARE NOT AVAILABLE",Toast.LENGTH_LONG);
+                Toast.makeText(this,"WIFI AWARE NOT AVAILABLE",Toast.LENGTH_LONG).show();
             }
         }
     }
