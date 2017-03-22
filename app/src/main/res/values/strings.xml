@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NanTest</string>
+    <string name="title_device_detail">Device Detail</string>
+</resources>
